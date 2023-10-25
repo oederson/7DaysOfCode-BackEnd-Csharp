@@ -1,0 +1,14 @@
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\DesafioSevenDaysOfCode.exe
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\DesafioSevenDaysOfCode.deps.json
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\DesafioSevenDaysOfCode.runtimeconfig.json
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\DesafioSevenDaysOfCode.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\DesafioSevenDaysOfCode.pdb
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.AssemblyInfoInputs.cache
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.AssemblyInfo.cs
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.csproj.CoreCompileInputs.cache
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\refint\DesafioSevenDaysOfCode.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.pdb
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.genruntimeconfig.cache
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\ref\DesafioSevenDaysOfCode.dll

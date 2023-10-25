@@ -1,7 +1,11 @@
 # 7 Days Of Code BackEnd C#
-## Day 1 : 
-* Criar o cÛdigo C# que executar· uma requisiÁ„o HTTP do tipo GET.
-* Executar a requisiÁ„o e pegar a resposta (o JSON)
+## Day 1 :
+* Criar o c√≥digo C# que executar√° uma requisi√ß√£o HTTP do tipo GET.
+* Executar a requisi√ß√£o e pegar a resposta (o JSON)
 * Imprimir o resultado no console
-## SoluÁ„o:
- Criei a funÁ„o assÌncrona BuscaPokemon, essa funÁ„o faz uma solicitaÁ„o HTTP para a API da PokeAPI para obter informaÁıes sobre um PokÈmon com base em um nome fornecido. Ela utiliza o nome para construir a URL da solicitaÁ„o, faz a solicitaÁ„o e, em seguida, desserializa a resposta JSON em um objeto da classe Pokemon. Se a solicitaÁ„o for bem-sucedida, o objeto Pokemon È retornado; caso contr·rio, se ocorrer uma exceÁ„o, a funÁ„o retorna null.Criei o mÈtodo ExibirInformacoesPokemon para imprimir as informÁıes do PokÈmon conforme pedido pelo desafio.
+### Solu√ß√£o:
+Criei a classe ListaPokemon para armazenar a lista de Pok√©mons disponiveis, depois listando e dando a op√ß√£o para o usuario escolher um Pok√©mon na lista.
+## Day2 :
+* No primeiro dia, voc√™ fez uma chamada para a API do Pok√©mon para receber o JSON com detalhes das esp√©cies de mascotes virtuais como resposta.A sua tarefa de hoje ser√° parsear essa resposta. Em outras palavras, voc√™ vai extrair as informa√ß√µes desse JSON. Repare que o JSON possui uma s√©rie de informa√ß√µes que podem ser relevantes no momento da ado√ß√£o de um mascote, tais como uma lista de habilidades (ability), altura (height) e peso (weight).
+### Solu√ß√£o:
+Criei a fun√ß√£o ass√≠ncrona BuscaPokemon, essa fun√ß√£o faz uma solicita√ß√£o HTTP para a API da PokeAPI para obter informa√ß√µes sobre um Pok√©mon com base em um nome fornecido. Ela utiliza o nome para construir a URL da solicita√ß√£o, faz a solicita√ß√£o e, em seguida, desserializa a resposta JSON em um objeto da classe Pokemon. Se a solicita√ß√£o for bem-sucedida, o objeto Pokemon √© retornado; caso contr√°rio, se ocorrer uma exce√ß√£o, a fun√ß√£o retorna null.Criei o m√©todo ExibirInformacoesPokemon para imprimir as inform√ß√µes do Pok√©mon conforme pedido pelo desafio.
