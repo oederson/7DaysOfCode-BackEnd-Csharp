@@ -1,9 +1,12 @@
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace ConsoleApp.Models;
 
 public partial class Pokemon
+
 {
+
     [JsonPropertyName("abilities")]
     public AbilityElement[]? Abilities { get; set; }
 
