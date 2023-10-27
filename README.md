@@ -18,3 +18,8 @@ O que é esperado do menu de adoção?
 * Que caso o jogador goste das características do mascote, ele possa realizar a adoção do mesmo
 ### Solução:
 Criei um laço while que utiliza todas as classes desenvolvidas nos dias anteriores, criei a classe MeusTamagochi para adicionar os tamagochis adotados. 
+
+## Day 4:
+* Refatorar o sistema para ficar de acordo com o padrão MVC, com Model, View e Controller.
+### Solução
+Criei a classe TamagochiController, para gerenciar os métodos da classe Menu que é a view do meu projeto.

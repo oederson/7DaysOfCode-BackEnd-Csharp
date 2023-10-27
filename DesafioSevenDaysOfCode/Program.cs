@@ -1,4 +1,5 @@
-﻿using DesafioSevenDaysOfCode.Services;
+﻿using DesafioSevenDaysOfCode.Controller;
+using DesafioSevenDaysOfCode.View;
 
-Menu m = new Menu();
-await m.ExibirMenuPrincipal();
+TamagochiController tama = new TamagochiController();
+await tama.Jogar();
