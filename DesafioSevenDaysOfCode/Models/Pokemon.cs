@@ -1,4 +1,3 @@
-using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace ConsoleApp.Models;
@@ -77,6 +76,7 @@ public partial class Pokemon
         {
             Console.Write($"{habilidade.Ability.Name} ");
         }
+        Console.WriteLine("");
         Console.WriteLine("----------------------------------------------------");
     }
 }

@@ -1,10 +1,11 @@
+using System.Text.Json;
 using System.Text.Json.Serialization;
-
 
 namespace ConsoleApp.Models;
 
 public partial class ListaPokemon
 {
+
     [JsonPropertyName("count")]
     public long Count { get; set; }
 
