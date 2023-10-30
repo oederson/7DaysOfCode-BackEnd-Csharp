@@ -5,6 +5,8 @@ namespace ConsoleApp.Models;
 public partial class Pokemon
 
 {
+    public int Alimentacao { get; set; }
+    public int Humor { get; set; }
 
     [JsonPropertyName("abilities")]
     public AbilityElement[]? Abilities { get; set; }
@@ -62,7 +64,22 @@ public partial class Pokemon
 
     [JsonPropertyName("weight")]
     public long Weight { get; set; }
-
+    public void ExibirInformacoesPokemonAntesDeAdotar()
+    {
+        Console.WriteLine("----------------------------------------------------");
+        Console.WriteLine($"Nome do pokemon : {Name}");
+        Console.WriteLine($"ID : {Id}");
+        Console.WriteLine($"Base experience : {BaseExperience}");
+        Console.WriteLine($"Altura : {Height}");
+        Console.WriteLine($"Peso : {Weight}");
+        Console.Write("Habilidades :");
+        foreach (var habilidade in Abilities)
+        {
+            Console.Write($"{habilidade.Ability.Name} ");
+        }
+        Console.WriteLine("");
+        Console.WriteLine("----------------------------------------------------");
+    }
     public void ExibirInformacoesPokemon()
     {
         Console.WriteLine("----------------------------------------------------");
@@ -71,6 +88,8 @@ public partial class Pokemon
         Console.WriteLine($"Base experience : {BaseExperience}");
         Console.WriteLine($"Altura : {Height}");
         Console.WriteLine($"Peso : {Weight}");
+        Console.WriteLine($"Humor : {Humor}");
+        Console.WriteLine($"Alimentacao : {Alimentacao}");
         Console.Write("Habilidades :");
         foreach(var habilidade in Abilities)
         {

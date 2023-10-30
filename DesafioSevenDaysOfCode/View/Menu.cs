@@ -2,6 +2,7 @@
 using DesafioSevenDaysOfCode.Models;
 using DesafioSevenDaysOfCode.Services;
 
+
 namespace DesafioSevenDaysOfCode.View
 {
     public class Menu
@@ -22,6 +23,7 @@ namespace DesafioSevenDaysOfCode.View
         }
         public void VerSeusMascotes()
         {
+            Pokemon pokemon = new Pokemon();
             var listando = tamagochiList.ObterTodosPokemons();
             if (listando.Count == 0)
             {
@@ -31,10 +33,45 @@ namespace DesafioSevenDaysOfCode.View
             {
               item.ExibirInformacoesPokemon();
             }
-            Console.WriteLine("Pressione uma tecla para continuar");
-            Console.ReadKey();
-       
-        }
+            
+            bool exibir = true;
+            while (exibir)
+            {
+                Console.WriteLine($"{nome} voce deseja::");
+                Console.WriteLine($"1 - Selecionar um pokemon para brincar");
+                Console.WriteLine("3 - Voltar");
+
+
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                        Console.Clear();
+                        for (int i = 0; i < listando.Count; i++) 
+                        {
+                            Console.WriteLine($"{i} - Para {listando[i].Name}");
+                        }
+                        Console.WriteLine("___________________________");
+                        int escolha = int.Parse(Console.ReadLine());
+                         pokemon = listando[escolha];
+                        InteragirComPokemon(pokemon);
+                        break;
+
+
+                    case "2":
+ 
+                        break;
+
+                    case "3":
+
+                        exibir = false;
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida");
+                        break;
+                }
+            }
+
+            }
         public async Task MenuAdocao() 
         {
             TamagochiServices servicos = new TamagochiServices();
@@ -56,14 +93,13 @@ namespace DesafioSevenDaysOfCode.View
                 Console.WriteLine($"1 - Saber mais sobre o {listaPokemon.Results[escolha - 1].Name}");
                 Console.WriteLine($"2 - Adotar {listaPokemon.Results[escolha - 1].Name}");
                 Console.WriteLine("3 - Voltar");
-                Console.WriteLine(listaPokemon.Results[escolha - 1].Url);
 
                 switch (Console.ReadLine())
                 {
                     case "1":
 
                         var tamagochi = await servicos.BuscaPokemon(listaPokemon.Results[escolha - 1].Url.ToString());
-                        tamagochi.ExibirInformacoesPokemon();
+                        tamagochi.ExibirInformacoesPokemonAntesDeAdotar();
                         break;
 
                     case "2":
@@ -83,5 +119,45 @@ namespace DesafioSevenDaysOfCode.View
                 }
             }
         }
+        public static void InteragirComPokemon(Pokemon poke)
+        {
+            bool exibir = true;
+
+            while (exibir)
+            {
+                Console.WriteLine($" voce deseja::");
+                Console.WriteLine($"1 - Saber como {poke.Name} está");
+                Console.WriteLine($"2 - Alimentar {poke.Name}");
+                Console.WriteLine($"3 - Brincar com {poke.Name}");
+                Console.WriteLine("4 - Sair");
+
+
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                        poke.ExibirInformacoesPokemon();
+                        break;
+
+                    case "2":
+                        poke.Alimentacao++;
+                        poke.Humor++;
+                        Console.ReadKey();
+                        break;
+
+                    case "3":
+                        poke.Alimentacao--;
+                        poke.Humor++;
+                        break;
+                    case "4":
+                        exibir = false;
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida");
+                        break;
+                }
+            }
+
+        }
+
     }
 }

@@ -23,3 +23,9 @@ Criei um laço while que utiliza todas as classes desenvolvidas nos dias anterio
 * Refatorar o sistema para ficar de acordo com o padrão MVC, com Model, View e Controller.
 ### Solução
 Criei a classe TamagochiController, para gerenciar os métodos da classe Menu que é a view do meu projeto.
+
+## Day 5:
+* Desenvolver interações do jogador com seus mascotes. Lidar com atributos e poder realmente brincar com seus pokémons.
+
+### Solução
+Adicionei a classe Pokemon as propriedades humor e alimentação. Adicionei menu para poder interagir com o pokemon, e a função alimentar e brincar.
