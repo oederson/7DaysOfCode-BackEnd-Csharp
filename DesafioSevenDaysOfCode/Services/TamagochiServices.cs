@@ -5,12 +5,7 @@ using System.Text.Json;
 namespace DesafioSevenDaysOfCode.Services;
 public class TamagochiServices
     
-{
-    private IMapper<Pokemon> _mapper;
-    public TamagochiServices(IMapper mapper)
-    {
-        _mapper = (IMapper<Pokemon>?)mapper;
-    }
+{ 
     public async Task<ListaPokemon> BuscarListaPokemon()
     {
         HttpClient httpClient = new HttpClient();

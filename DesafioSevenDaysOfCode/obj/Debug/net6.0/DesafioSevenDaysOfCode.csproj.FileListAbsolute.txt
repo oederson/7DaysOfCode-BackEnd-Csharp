@@ -12,3 +12,10 @@ C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDay
 C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.pdb
 C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.genruntimeconfig.cache
 C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\ref\DesafioSevenDaysOfCode.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.csproj.AssemblyReference.cache
+C:\Users\ederh\desafio-backend-csharp\7DaysOfCode-BackEnd-Csharp\DesafioSevenDaysOfCode\obj\Debug\net6.0\DesafioSevenDaysOfCode.csproj.CopyComplete
