@@ -14,8 +14,8 @@ namespace DesafioSevenDaysOfCode.Controller
         public TamagochiController()
         {
             var config = new MapperConfiguration(cfg => cfg.CreateMap<PokemonDTO, Pokemon>());
-            //var mapper = new Mapper(config);
-            mapper = config.CreateMapper();
+            var mapper = new Mapper(config);
+            
 
         }
 
@@ -38,30 +38,40 @@ namespace DesafioSevenDaysOfCode.Controller
                         {
                             await menu.MenuAdocao(nome, listaPokemon);
                             string escolhaDoMenuAdocao = Console.ReadLine();
-                            int escolha = int.Parse(escolhaDoMenuAdocao);
-                            var tamagochi = await servicos.BuscaPokemon(listaPokemon.Results[escolha - 1].Url.ToString());
-                            bool exibir = true;
-                            while (exibir)
+                            int escolha;
+                            if (int.TryParse(escolhaDoMenuAdocao, out escolha))
                             {
-                                menu.OpcaoMenuAdocao(nome, listaPokemon, escolhaDoMenuAdocao);
-                                switch (Console.ReadLine())
-                                {
-                                    case "1":
-                                        tamagochi.ExibirInformacoesPokemonAntesDeAdotar();
-                                        break;
-                                    case "2":
-                                        tamagochiList.AdicionarPokemon(tamagochi);
-                                        Console.WriteLine($"{listaPokemon.Results[escolha - 1].Name} Adiconado com sucesso");
-                                        Console.ReadKey();
-                                        break;
-                                    case "3":
-                                        exibir = false;
-                                        break;
-                                    default:
-                                        Console.WriteLine("Opção inválida");
-                                        break;
-                                }
+                                if (escolha <= listaPokemon.Results.Length) 
+                                { 
+                                var tamagochi = await servicos.BuscaPokemon(listaPokemon.Results[escolha - 1].Url.ToString());
+                                bool exibir = true;
+                                    while (exibir)
+                                    {
+                                        menu.OpcaoMenuAdocao(nome, listaPokemon, escolhaDoMenuAdocao);
+                                        switch (Console.ReadLine())
+                                        {
+                                            case "1":
+                                                tamagochi.ExibirInformacoesPokemonAntesDeAdotar();
+                                                break;
+                                            case "2":
+                                                tamagochiList.AdicionarPokemon(tamagochi);
+                                                Console.WriteLine($"{listaPokemon.Results[escolha - 1].Name} Adiconado com sucesso");
+                                                Console.ReadKey();
+                                                break;
+                                            case "3":
+                                                exibir = false;
+                                                break;
+                                            default:
+                                                Console.WriteLine("Opção inválida");
+                                                break;
+                                        }
+                                    }
+                                    Console.WriteLine("Opção invalida");
+                                    Console.ReadKey();
+                                }                               
                             }
+                            Console.WriteLine("Opção invalida");
+                            Console.ReadKey();
                             break;
                         }
                     case "2": 
